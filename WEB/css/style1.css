@@ -1,0 +1,40 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+#ALL{
+	width: 900px;
+	height: 1000px;
+	margin-left: 25%;
+	border: 10px solid #CCCCCC;
+}
+#head{
+	margin: 0px;
+	height: 500px;
+	width: 100%;
+	background:url('../images/a.jpg') no-repeat;
+  	background-size: cover;
+}
+#head img{
+	width: 200px;
+	float: left;
+}
+#head ul{
+	float: left;
+}
+#head ul li a{
+	text-decoration: none;
+	font-size: 14px;
+}
+#head ul li a:hover{
+	border: 1px solid #fff;
+}
+#head ul li{
+		display: inline;
+		margin-right: 20px;
+		margin-left: 50px;
+}
+#Main{
+	padding-left: 8em;
+	padding-right: 8em;
+}

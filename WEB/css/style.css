@@ -1,0 +1,135 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    color: black;
+    font-family: Inconsolata, monospace;
+    font-feature-settings: 'liga' 0;
+    font-size: 18.4px;
+    line-height: 1.6;
+    margin: 0px;
+}
+#Left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-image:url('../images/background.png');
+}
+.menu ul li {
+    display: inline;
+    letter-spacing: 0.1em;
+}
+#Left ul li a{
+        color: #fff;
+        margin-right: 16%;
+        margin-left: 3%;
+        font-size: 18.4px;
+        text-decoration: none;
+        font-family: 'Space Mono', monospace;
+        font-weight: bold
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+
+}
+.mid a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inconsolata', monospace
+}
+.mid a h1{
+    font-size: 3em;
+    margin: 0;
+    line-height: 1.1;
+}
+#Left ul li a:hover{
+    border-bottom: 3px solid rgb(254, 105, 147);
+}
+#Left h1{
+    color: #fff;
+    margin: 270px auto auto 170px;
+    font-size: 60px;
+}
+#Left p{
+    color: #fff;
+    margin-left: 170px;
+}
+#left.Bot ul li a{
+    margin-left: 150px;
+}
+#Right{
+margin-left: 40%;
+font-family: 'Inconsolata', monospace;
+}
+.hed{
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+#Right ul.tt0{
+    padding-right: 8em;
+    padding-left: 8em;
+}
+#Right ul.tt0 li{
+    display: inline;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.2em;
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+#Right ul.tt0 li a{
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+
+}
+.mid1{
+    margin: 0;
+}
+.mid1 header{
+    padding-left: 4em;
+    padding-right: 4em
+}
+.mid1 header h2 {
+    font-family: "Space Mono",monospace;
+    font-size: 1em;
+    margin: 0;
+}
+.mid1 header h1{
+
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.bot1 {
+    padding-bottom: 2em;
+}
+.CH{
+    padding-left: 4em;
+    padding-right: 4em; 
+    font-family: monospace;
+}
+#Right ul li span.label{
+    background-color: rgba(254, 105, 147, 0.1);
+    border-radius: 3px;
+    color: #fe6993;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.3em 0;
+    line-height: 1em;
+    margin: 0;
+    font-size: 85%;
+}
+#Right ul li span a{
+        font-family: 'Inconsolata', monospace;
+}
