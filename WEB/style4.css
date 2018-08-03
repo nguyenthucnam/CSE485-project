@@ -22,7 +22,7 @@ body{
 	border: 1px solid #000;
 }
 #main{
-	height: 500px;
+	height: 850px;
 	width: 100%;
 	border: 1px solid #000;
 	background: #ccc;
@@ -54,32 +54,38 @@ body{
 		list-style: none;
 }
 .LE{
-	height: 400px;
+	height: 800px;
 	width: 20%;
 	background: #ff6600;
 	float: left;
 }
 .MID{
-	height: 400px;
+	height: 800px;
 	width: 60%;
 	background: #ff44;
 	float: left;
 }
 .RI{
-	height: 400px;
+	height: 800px;
 	width: 20%;
 	background: #ff6688;
 	float: left;
 }
-.MID ul li{
-	text-align: center;
-	list-style: none;
-	margin-bottom: 10px;
+#form-id label{
+	display:block;
+	margin-top: 20px;
+	margin-left: 200px;
+	width: 350px;
 }
-.MID button{
- display: inline;
+#form-id label input{
+float: right;
 }
+#validation label {float:left;width:100%;}
+	.error {color:#F00;}
 #footer{
 	height: 50px;
 	width: 100%;
+}
+.M{
+	display: none;
 }
