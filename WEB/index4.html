@@ -3,9 +3,90 @@
     <meta charset="utf-8">
     <title>JS Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="css/style4.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
+<script>
+  $(document).ready(function() {
+    $("#form-id").validate({
+      rules: {
+        name: {   // đây là trường name của input
+          required: true  // không được để trống
+        },
+        name1: {   // đây là trường name của input
+          required: true  // không được để trống
+        },
+        name2: {   // đây là trường name của input
+          required: true  // không được để trống
+        },
+        name3: {   // đây là trường name của input
+          required: true  // không được để trống
+        },
+        name4: {   // đây là trường name của input
+          required: true  // không được để trống
+        },
+        name5: {   // đây là trường name của input
+          required: true  // không được để trống
+        },
+        name6: {   // đây là trường name của input
+          required: true  // không được để trống
+        },
+        tel: { 
+          required: true, 
+          number : true, //  bắt buộc là kiểu số
+          digits :true,  // không được tồn tại số âm
+          rangelength: [10, 11] // giới hạn số ký tự được nhập vào
+        },
+          email: {
+          required: true,
+          email: true // bắt lỗi định dạng mail
+        }
+      },
+      messages: {
+        name: {
+          required: "Xin vui lòng nhập tên đăng nhập !"
+          },
+          name1: {
+          required: "Xin vui lòng nhập Mật Khẩu !",
+          minlength:"mật khẩu phải từ 6 ký tự trở lên !"
+          },
+          name2: {
+          required: "Xin vui lòng nhập Xác nhận mật khẩu !",
+          minlength:"mật khẩu phải từ 6 ký tự trở lên !",
+          equalTo: "Xin nhập lại mật khẩu !"
+          },
+          name3: {
+          required: "Xin vui lòng nhập tên !"
+          },
+          name4: {
+          required: "Xin vui lòng nhập ngày sinh !"
+          },
+          name5: {
+          required: "Xin vui lòng nhập địa chỉ !"
+          },
+          name6: {
+          required: "Xin vui lòng nhập Facebook !"
+          },
+          tel: {
+          required: "Xin vui lòng nhập số điện thoại !",
+          number : "Số điện thoại bắt buộc là kiểu số !",
+          digits : "Số điện thoại không được nhập số âm !",
+          rangelength: "Số điện thoại phải từ 10-11 sô"
+          },
+        email: {
+          required: "Xin vui lòng nhập email !",
+          email: "Email sai định dạng, xin vui lòng kiểm tra lại !"
+          }
+      }
+    });
+  });
+          $(document).ready(function(){
+            $("#DK").click(function(){
+                $("*").show();
+            	});
+        	});
+</script>
 <div id="header">
 	<div class="logo-L">
 	<h1 style="text-align: center;">HOME</h1>
@@ -30,57 +111,22 @@
 		<h1 style="text-align: center;">HOME</h1>
 	</div>
 	<div class="MID">
-		<h1 style="text-align: center;">Đăng ký thành viên</h1>
-		<ul>
-			<li>
-				<span style="margin-right: 10px;">
-					Tên đăng nhâp * <input   type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-right: 45px;">
-				Xác Nhận Mật Khẩu * <input  type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-left: 18px;">
-					Họ và Tên * <input  type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-left: 18px;">
-					Ngày sinh * <input  type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-left: 35px;">
-					Địa chỉ * <input  type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-left: 10px;">
-					Điện Thoại * <input  type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-left: 43px;">
-					Email * <input  type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-left: 25px;">
-					facebook * <input  type="text">
-				</span>
-			</li>
-			<li>
-				<span style="margin-left:  0px;">
-					Giới Tính * <input type="checkbox" name="vehicle" value="Bike">Nam
-					<input type="checkbox" name="vehicle" value="Bike">Nữ<br>	
-				</span>
-			</li>
-			<button id="S1" style="margin-left: 400px;"><a href=""></a>Đăng ký</button>
-			<button id="S2"><a href=""></a>Làm Lại</button>
-		</ul>
+	<form method="post" action="#" id="form-id">
+	      <label for="name"> Tên Đăng Nhâp *  <input type="text" name="name"></label>
+	      <label for="name1"> Mật Khẩu *  <input id="xnmk" type="text" name="name1" minlength="6" maxlength="20"></label>
+	      <label for="name2"> Xác nhận mật khẩu *  <input type="text" name="name2" equalTo="#xnmk" minlength="6" maxlength="20"></label>
+	      <label for="name3"> Họ và Tên *  <input type="text" name="name3"></label>
+	      <label for="name4"> Ngày sinh *  <input type="text" name="name4"></label>
+	      <label for="name5"> Địa chỉ *  <input type="text" name="name5"></label>
+	      <label for="name6"> Facebook *  <input type="text" name="name6"></label>
+	      <label for="tel"> Số điện thoại *  <input type="text" name="tel" minlength="10"></label>
+	      <label for="name6"> Giới tính *  <input type="checkbox" name="name7"></label>
+	      <label for="email" style="margin-bottom: 20px;"> Email * <input type="text" name="email" id="email">
+	      </label>
+			<button id="DK" type="submit" style="margin-left: 400px;">Đăng Ký</button>
+			<button id="Lamlai" type="submit-button">Làm Lại</button>
+			<div class="M">chúc bạn thành công</div>
+	</form>
 	</div>
 	<div class="RI">
 		<h1 style="text-align: center;">HOME</h1>
@@ -91,5 +137,22 @@
 <h1 style="text-align: center; background: #ff9">footer</h1>
 
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+<script>
+		 $("#Lamlai").on("click", function(){
+		       //code here
+		       $('#form-id')[0].reset();
+		});
+
+		$(document).ready(function(){
+		    $("input").focusin(function(){
+		        $(this).css("background-color", "#FFFFCC");
+		    });
+		    $("input").focusout(function(){
+		        $(this).css("background-color", "#FFFFFF");
+		    });
+		});
+
+</script>
   </body>
 </html>
